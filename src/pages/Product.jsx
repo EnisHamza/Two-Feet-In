@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 
 function Product() {
-  return <div>Product</div>;
+  return (
+    <div>
+      <Header />
+      <h1>Product</h1>
+    </div>
+  );
 }
 
 export default Product;

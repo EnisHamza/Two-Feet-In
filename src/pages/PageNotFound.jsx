@@ -1,7 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
 
 function PageNotFound() {
-  return <div>Page Not Found</div>;
+  return (
+    <div>
+      <Header />
+      Page Not Found
+    </div>
+  );
 }
 
 export default PageNotFound;
