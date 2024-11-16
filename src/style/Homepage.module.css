@@ -1,0 +1,40 @@
+.homepage {
+  height: calc(93vh);
+  margin: 2.5rem;
+  /*background-image: linear-gradient(
+      rgba(36, 42, 46, 0.8),
+      rgba(36, 42, 46, 0.8)
+    ),
+    url("/bg.jpg");*/
+  background-color: #0c1d36;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem 12rem;
+}
+
+.homepage section {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.homepage h2 {
+  width: 90%;
+  font-size: 1.9rem;
+  color: var(--color-light--1);
+  margin-bottom: 7.2rem;
+}
+
+span {
+  color: #f9cc0b;
+}

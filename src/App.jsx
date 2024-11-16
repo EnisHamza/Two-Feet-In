@@ -8,7 +8,6 @@ import Layout from "./pages/Layout";
 function App() {
   return (
     <div>
-      <h1>Two Feet In</h1>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
