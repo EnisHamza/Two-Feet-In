@@ -12,10 +12,12 @@ function Header() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/pricing">Pricing</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
         </li>
         <li>
-          <NavLink to="/product">Product</NavLink>
+          <NavLink to="/login" className={styles.ctaLink}>
+            Login
+          </NavLink>
         </li>
       </ul>
     </nav>
