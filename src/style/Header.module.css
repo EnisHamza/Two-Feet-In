@@ -32,3 +32,49 @@ a.ctaLink:visited {
   padding: 0.8rem 2rem;
   border-radius: 7px;
 }
+
+@media (max-width: 780px) {
+  .nav {
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+
+  .nav ul {
+    gap: 3rem;
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    font-size: 1.5rem;
+  }
+
+  a.ctaLink:link,
+  a.ctaLink:visited {
+    padding: 0.6rem 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav a:link,
+  .nav a:visited {
+    font-size: 1.4rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  a.ctaLink:link,
+  a.ctaLink:visited {
+    padding: 0.5rem 1.5rem;
+  }
+}
