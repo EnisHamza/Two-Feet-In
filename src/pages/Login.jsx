@@ -36,7 +36,11 @@ function Login() {
           />
         </div>
 
-        <h3>Don't have an account? </h3>
+        <h3>
+          Don't have an account?
+          <a href="/">Register</a>
+          {""}
+        </h3>
 
         <div>
           <Button type="primary">Login</Button>
