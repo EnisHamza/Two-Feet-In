@@ -7,17 +7,20 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="login" element={<Login />} />
-          <Route path="app" element={<Layout />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Homepage />} />
+        <Route path="about-us" element={<AboutUs />} />
+        <Route path="login" element={<Login />} />
+        <Route path="app" element={<Layout />}>
+          <Route index element={<p>List of Cities</p>} />
+          <Route path="cities" element={<p>List of Cities</p>} />
+          <Route path="countries" element={<p>Countries</p>} />
+          <Route path="form" element={<p>Form</p>} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

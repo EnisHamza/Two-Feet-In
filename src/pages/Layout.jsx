@@ -1,11 +1,13 @@
 import React from "react";
-import AppHeader from "../components/AppHeader";
 import styles from "../style/Layout.module.css";
+import Sidebar from "../components/Sidebar";
+import Map from "../components/Map";
 
 function Layout() {
   return (
-    <div className={styles.nav}>
-      <AppHeader />
+    <div className={styles.app}>
+      <Sidebar />
+      <Map />
     </div>
   );
 }
