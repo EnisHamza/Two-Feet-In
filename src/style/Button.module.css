@@ -17,6 +17,7 @@
 
 .back {
   font-weight: 600;
+  font-size: small;
   background: none;
   border: 1px solid currentColor;
 }

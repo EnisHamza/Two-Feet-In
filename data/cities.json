@@ -47,6 +47,18 @@
         "lng": "-2.13128394200588"
       },
       "id": 98443198
+    },
+    {
+      "cityName": "Mitrovice",
+      "country": "Republic of Kosovo",
+      "emoji": "🇽🇰",
+      "date": "2024-11-24T17:06:22.822Z",
+      "notes": "Most beautiful City in the World!",
+      "position": {
+        "lat": "42.842756178716144",
+        "lng": "20.885009765625004"
+      },
+      "id": 98443199
     }
   ]
 }
