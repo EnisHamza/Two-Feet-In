@@ -4,7 +4,6 @@
   display: flex;
   gap: 1.6rem;
   align-items: center;
-
   background-color: var(--color-dark--1);
   border-radius: 7px;
   padding: 1rem 2rem;
@@ -51,4 +50,93 @@
 .deleteBtn:hover {
   background-color: var(--color-brand--1);
   color: var(--color-dark--1);
+}
+
+@media (max-width: 1024px) {
+  .cityItem {
+    padding: 0.8rem 1.5rem; /* Reduce padding on tablets */
+    gap: 1rem; /* Reduce gap between items */
+  }
+
+  .emoji {
+    font-size: 2.2rem; /* Smaller emoji on tablet */
+  }
+
+  .name {
+    font-size: 1.6rem; /* Smaller text for name */
+  }
+
+  .date {
+    font-size: 1.4rem; /* Adjust date font size */
+  }
+
+  .deleteBtn {
+    height: 1.8rem; /* Reduce size of the delete button */
+    font-size: 1.4rem; /* Reduce font size for delete button */
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 600px) {
+  .cityItem {
+    padding: 0.8rem 1rem; /* Reduce padding to fit small screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1rem; /* Reduce the gap between elements */
+    align-items: flex-start; /* Align to the left */
+  }
+
+  .emoji {
+    font-size: 2rem; /* Reduce emoji size for small screens */
+  }
+
+  .name {
+    font-size: 1.4rem; /* Reduce font size for name */
+    font-weight: 600; /* Ensure it's still bold */
+    margin-right: 0; /* Remove margin */
+    text-align: center;
+  }
+
+  .date {
+    font-size: 1.3rem; /* Reduce date font size */
+  }
+
+  .deleteBtn {
+    height: 1.6rem; /* Smaller delete button size */
+    font-size: 1.4rem; /* Smaller font size for delete button */
+  }
+
+  .cityItem--active {
+    border: 2px solid #f9cc0b; /* Keep border style the same for active state */
+    border-left: 5px solid #f9cc0b;
+  }
+}
+
+/* For extra small screens (max-width: 375px, like iPhone SE) */
+@media (max-width: 375px) {
+  .cityItem {
+    padding: 0.2rem 0.4rem; /* Further reduce padding */
+    gap: 0.1rem; /* Further reduce gap between items */
+  }
+
+  .emoji {
+    font-size: 1.8rem; /* Make emoji even smaller */
+  }
+
+  .name {
+    font-size: 1.3rem; /* Further reduce name size */
+  }
+
+  .date {
+    font-size: 1.2rem; /* Further reduce the date font size */
+  }
+
+  .deleteBtn {
+    height: 1.4rem; /* Smaller delete button */
+    font-size: 1.2rem; /* Smaller font size for the delete button */
+  }
+
+  .deleteBtn:hover {
+    background-color: var(--color-brand--1); /* Hover effect remains the same */
+    color: var(--color-dark--1);
+  }
 }

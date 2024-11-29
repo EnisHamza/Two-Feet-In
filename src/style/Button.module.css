@@ -34,3 +34,90 @@
   color: var(--color-dark--2);
   box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
 }
+
+@media (max-width: 1024px) {
+  /* General button styles for tablets and smaller screens */
+  .btn {
+    padding: 0.7rem 1.4rem; /* Slightly reduce padding for smaller screens */
+    font-size: 1.4rem; /* Adjust font size for buttons */
+  }
+
+  .primary {
+    font-size: 1.4rem; /* Adjust font size for primary button */
+  }
+
+  .back {
+    font-size: 1.3rem; /* Slightly larger font size for back button */
+  }
+
+  /* Adjust the position button for tablets */
+  .position {
+    font-size: 1.3rem; /* Reduce font size */
+    bottom: 3.5rem; /* Adjust bottom spacing */
+  }
+}
+
+/* For small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* General button styles for small devices */
+  .btn {
+    padding: 0.6rem 1.2rem; /* Reduce padding for smaller screens */
+    font-size: 1.3rem; /* Adjust font size for buttons */
+  }
+
+  .primary {
+    font-size: 1.3rem; /* Adjust font size for primary button */
+  }
+
+  .back {
+    font-size: 1.2rem; /* Adjust font size for back button */
+  }
+
+  /* Adjust the position button for small screens */
+  .position {
+    font-size: 1.2rem; /* Reduce font size */
+    bottom: 3rem; /* Adjust bottom spacing */
+  }
+}
+
+/* For extra small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  /* General button styles for very small devices */
+  .btn {
+    padding: 0.5rem 1rem; /* Reduce padding further */
+    font-size: 1.2rem; /* Adjust font size for buttons */
+  }
+
+  .back {
+    font-size: 1.1rem; /* Adjust font size for back button */
+  }
+
+  /* Adjust the position button for very small screens */
+  .position {
+    font-size: 1.1rem; /* Reduce font size */
+    bottom: 2.5rem; /* Adjust bottom spacing */
+  }
+}
+
+/* For extra small screens (max-width: 375px) */
+@media (max-width: 375px) {
+  /* Further reduce button size for very small screens */
+  .btn {
+    padding: 0.4rem 0.8rem; /* Smaller padding */
+    font-size: 2rem; /* Smallest font size for buttons */
+  }
+
+  .primary {
+    font-size: 1.2rem; /* Small font size for primary button */
+  }
+
+  .back {
+    font-size: 1rem; /* Smaller font size for back button */
+  }
+
+  /* Further reduce size of position button */
+  .position {
+    font-size: 1rem; /* Smallest font size */
+    bottom: 2rem; /* Adjust bottom position */
+  }
+}

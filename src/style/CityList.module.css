@@ -3,7 +3,6 @@
   height: 65vh;
   list-style: none;
   overflow-y: scroll;
-  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
@@ -11,5 +10,32 @@
 }
 
 .cityList::-webkit-scrollbar {
-  width: 0;
+  width: 1;
+}
+
+@media (max-width: 1024px) {
+  .cityList {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .cityList {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .cityList {
+    height: 50vh;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .cityList {
+    height: 45vh;
+    gap: 0.8rem;
+    overflow-y: scroll;
+  }
 }

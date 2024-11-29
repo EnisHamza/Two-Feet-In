@@ -8,7 +8,7 @@ function AboutUs() {
       <Header />
 
       <section>
-        <img src="map.png" className="image" alt="map" />
+        <img src="map.png" alt="map" />
         <div>
           <h2>
             About <span>Two Feet In.</span>

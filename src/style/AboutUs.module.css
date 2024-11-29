@@ -18,6 +18,15 @@ img {
   width: 420px;
   height: 250px;
   object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product section img {
+  max-width: 100%;
+  height: auto;
+  object-position: center;
 }
 
 .product h2 {
@@ -37,61 +46,64 @@ img {
   margin-top: 2rem;
 }
 
-@media (max-width: 856px) {
+@media (max-width: 1024px) {
   .product {
-    padding: 2rem 3rem;
+    padding: 1.5rem 5rem;
   }
 
   .product section {
+    width: 90%;
+    margin: 3rem auto;
     grid-template-columns: 1fr;
-    margin: 2rem auto;
-    gap: 2rem;
-  }
-
-  .product h2 {
-    font-size: 3rem;
-    margin-left: 2rem;
-  }
-
-  .product p {
-    font-size: 1.4rem;
-    margin-left: 2rem;
-  }
-
-  .product img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: 0;
-    max-width: 40%;
-  }
-}
-
-@media (max-width: 400px) {
-  .product {
-    padding: 1rem 1rem;
-  }
-
-  .product section {
-    gap: 1.5rem;
-  }
-
-  .product h2 {
-    font-size: 2.4rem;
-    margin-left: 1rem;
-  }
-
-  .product p {
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    gap: 4rem;
   }
 
   img {
     width: 100%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .product section a {
+  .product h2 {
+    font-size: 3.2rem;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .product p {
     font-size: 1.4rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding: 1.5rem 2rem;
+  }
+
+  .product section {
+    width: 100%;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product h2 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  .product p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
   }
 }

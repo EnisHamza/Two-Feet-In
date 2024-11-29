@@ -6,7 +6,22 @@
   overflow-x: hidden;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* 2 columns on larger screens */
   align-content: start;
   gap: 1.6rem;
+}
+
+/* For tablets (screens smaller than 1024px) */
+@media (max-width: 1024px) {
+  .countryList {
+    grid-template-columns: 1fr 1fr; /* Keep 2 columns for tablets */
+  }
+}
+
+/* For mobile screens (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .countryList {
+    grid-template-columns: 1fr; /* Switch to 1 column on mobile */
+    height: 80vh; /* Allow more height for the list on mobile */
+  }
 }

@@ -42,3 +42,69 @@
   font-family: inherit;
   font-size: 1.2rem;
 }
+
+@media (max-width: 1024px) {
+  .form {
+    padding: 1.5rem 2rem; /* Reduce padding for tablets */
+    width: 70%;
+    overflow-y: scroll;
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem; /* Add space between buttons */
+  }
+
+  .flag {
+    font-size: 2.4rem; /* Smaller flag size */
+    top: 2rem; /* Adjust flag position */
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .form {
+    padding: 1rem 1.5rem; /* Reduce padding on mobile */
+    overflow-y: scroll;
+  }
+
+  .row {
+    gap: 1rem; /* Increase space between inputs */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1.5rem; /* Add more space between buttons */
+  }
+
+  .flag {
+    font-size: 2rem; /* Smaller flag size for mobile */
+    top: 1.5rem; /* Adjust flag position */
+  }
+
+  /* Ensure date picker font size is readable on smaller devices */
+  :global(.react-datepicker) {
+    font-size: 1.4rem;
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .form {
+    padding: 1rem; /* Further reduce padding for very small screens */
+    overflow-y: scroll;
+  }
+
+  .row {
+    gap: 1.2rem; /* Slightly increase gap for readability */
+  }
+
+  .buttons {
+    gap: 2rem; /* More space between the buttons */
+  }
+
+  .flag {
+    font-size: 1.8rem; /* Reduce flag size further */
+    top: 1rem; /* Adjust flag position */
+  }
+}

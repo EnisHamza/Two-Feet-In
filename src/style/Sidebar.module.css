@@ -1,7 +1,7 @@
 .sidebar {
   flex-basis: 56rem;
   background-color: #0c1d36;
-  padding: 3rem 5rem 3.5rem 5rem;
+  padding: 2rem 5rem 3.5rem 5rem;
 
   display: flex;
   flex-direction: column;
@@ -15,5 +15,29 @@
 
 .copyright {
   font-size: 1.2rem;
+  margin-top: 1rem;
   color: var(--color-light--1);
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    flex-basis: 40rem; /* Reduce sidebar width for tablets */
+    padding: 2rem 3rem 2.5rem 3rem; /* Reduce padding */
+  }
+
+  .copyright {
+    font-size: 1rem; /* Reduce font size for smaller screens */
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    flex-basis: 30rem; /* Further reduce sidebar width on mobile */
+    padding: 1.5rem 2rem 2rem 2rem; /* Further reduce padding */
+  }
+
+  .copyright {
+    font-size: 0.9rem; /* Reduce font size further for mobile */
+  }
 }

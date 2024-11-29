@@ -18,11 +18,6 @@
   color: white;
 }
 
-.user img {
-  border-radius: 100px;
-  height: 4rem;
-}
-
 .user button {
   background-color: #f9cc0b;
   border-radius: 7px;
@@ -34,4 +29,69 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .user {
+    top: 3rem; /* Reduce distance from top */
+    right: 3rem; /* Reduce distance from right */
+    padding: 0.8rem 1.2rem; /* Smaller padding */
+    font-size: 1.4rem; /* Smaller font size */
+    gap: 1.2rem; /* Reduce gap between the icon and the text */
+  }
+
+  .user button {
+    padding: 0.5rem 1rem; /* Smaller button padding */
+    font-size: 1.1rem; /* Smaller button font size */
+  }
+}
+
+/* For small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .user {
+    top: 2.5rem; /* Reduce top distance */
+    right: 2.5rem; /* Reduce right distance */
+    padding: 0.6rem 1rem; /* Smaller padding */
+    font-size: 1.3rem; /* Even smaller font size */
+    gap: 1rem; /* Further reduce gap */
+  }
+
+  .user button {
+    padding: 0.4rem 0.8rem; /* Smaller button padding */
+    font-size: 1rem; /* Smaller button font size */
+  }
+}
+
+/* For extra small devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .user {
+    top: 2rem; /* Move closer to top */
+    right: 2rem; /* Move closer to right */
+    padding: 0.5rem 0.8rem; /* Smaller padding */
+    font-size: 1.2rem; /* Reduce font size further */
+    gap: 0.8rem; /* Reduce gap even more */
+  }
+
+  .user button {
+    padding: 0.3rem 0.6rem; /* Even smaller button padding */
+    font-size: 0.9rem; /* Even smaller button font size */
+  }
+}
+
+/* For very small devices (max-width: 375px) */
+@media (max-width: 413px) {
+  .user {
+    top: 1.5rem; /* Move even closer to the top */
+    right: 1.5rem; /* Move even closer to the right */
+    padding: 0.4rem 0.6rem; /* Very small padding */
+    font-size: 1rem; /* Very small font size */
+    gap: 0.6rem; /* Very small gap */
+  }
+  .user span {
+    font-size: 0;
+  }
+  .user button {
+    padding: 0.3rem 0.5rem; /* Small button padding */
+    font-size: 1.1rem; /* Small button font size */
+  }
 }
