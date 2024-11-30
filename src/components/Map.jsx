@@ -40,6 +40,15 @@ function Map() {
     },
     [geolocationPosition]
   );
+
+  useEffect(() => {
+    // Wait until the map container is rendered
+    const mapElement = document.querySelector(`.${styles.map}`);
+    if (mapElement) {
+      mapElement._leaflet_id && mapElement?.leaflet?.invalidateSize(); // Ensure Leaflet recalculates size
+    }
+  }, []);
+
   return (
     <div className={styles.mapContainer}>
       {!geolocationPosition && (
