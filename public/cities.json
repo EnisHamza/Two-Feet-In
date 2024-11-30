@@ -1,0 +1,52 @@
+{
+  "cities": [
+    {
+      "cityName": "Mitrovice",
+      "country": "Republic of Kosovo",
+      "emoji": "🇽🇰",
+      "date": "2024-11-24T17:06:22.822Z",
+      "notes": "Most beautiful City in the World!",
+      "position": {
+        "lat": "42.842756178716144",
+        "lng": "20.885009765625004"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Tirana",
+      "country": "Albania",
+      "emoji": "🇦🇱",
+      "date": "2024-10-11T09:50:20.000Z",
+      "notes": "Good city!",
+      "position": {
+        "lat": "41.31785287742189",
+        "lng": "19.808349609375004"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Neuchatel",
+      "country": "Switzerland",
+      "emoji": "🇨🇭",
+      "date": "2023-09-23T09:51:05.000Z",
+      "notes": "Nice city with interesting festivals!",
+      "position": {
+        "lat": "46.98168602883547",
+        "lng": "6.858215332031251"
+      },
+      "id": 98443201
+    },
+    {
+      "cityName": "Hamburg",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2023-07-08T09:52:02.000Z",
+      "notes": "Spent three good months in this beautiful city!",
+      "position": {
+        "lat": "53.58041482449123",
+        "lng": "9.931640625000002"
+      },
+      "id": 98443202
+    }
+  ]
+}
